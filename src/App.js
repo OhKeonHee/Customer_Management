@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Customer from './Components/Customer.js';
+
+const customers = [
+  {
+    'id' : 1,
+    'name' : '오건희',
+    'birthday' : '981222',
+    'image' : 'http://via.placeholder.com/64x64',
+    'gender' : '남자',
+    'job' : '개발자'
+  },
+  {
+    'id' : 2,
+    'name' : '오건희',
+    'birthday' : '981222',
+    'image' : 'http://via.placeholder.com/64x64',
+    'gender' : '남자',
+    'job' : '개발자'
+  },
+  {
+    'id' : 3,
+    'name' : '오건희',
+    'birthday' : '981222',
+    'image' : 'http://via.placeholder.com/64x64',
+    'gender' : '남자',
+    'job' : '개발자'
+  },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Customer 
+      customers={customers}
+    />
   );
 }
 
