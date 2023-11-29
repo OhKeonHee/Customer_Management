@@ -4,3 +4,21 @@
 4. server.js 작성
 5. node server.js로 확인
 6. 작성한대로 localhost:5000/api/hello에 접속하면 출력
+
+7. package.json 에서 dev항목처럼 작성해놓으면
+터미널에서 yarn dev 입력: 클라이언트와 서버를 동시에 오픈하면서 빌드 및 확인속도가 빨리짐 -> 개발 편의성
+
+8. mysql 생성후 연결하기
+ -> npm install --save mysql로 설치
+ gitignore에서 git에 올라가지 않도록 
+ # database
+/database.json 작성 후 database.json 생성
+
+database.json 에서
+{
+  "host": "127.0.0.1",
+  "user": "OhKeonHee",
+  "password": "암호",
+  "port": "3306",
+  "database": "management"
+} 작성
