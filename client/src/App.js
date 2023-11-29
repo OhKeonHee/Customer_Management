@@ -30,9 +30,9 @@ const customers = [
 
 function App() {
   return (
-    <Customer 
-      customers={customers}
-    />
+    <div>
+      <Customer customers={customers} />
+    </div>
   );
 }
 
